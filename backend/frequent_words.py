@@ -8,8 +8,8 @@ import nltk
 
 
 # DL frequent words FR
-# spacy.cli.download("fr_core_news_sm")
-# nltk.download('stopwords')
+spacy.cli.download("fr_core_news_sm")
+nltk.download('stopwords')
 nlp = spacy.load("fr_core_news_sm")
 stopWords = set(stopwords.words('french'))
 
