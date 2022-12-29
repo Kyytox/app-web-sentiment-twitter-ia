@@ -34,6 +34,12 @@ cur.execute('CREATE TABLE tweets (id serial PRIMARY KEY,'
             'quote_count INT);'
             )
 
+
+cur.execute('COPY tweets',
+            'FROM "../tweets_bd.csv"',
+            'DELIMITER ","',
+            'CSV HEADER;')
+
 conn.commit()
 
 cur.close()
