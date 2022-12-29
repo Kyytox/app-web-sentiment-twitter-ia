@@ -37,7 +37,7 @@ cur.execute('CREATE TABLE tweets (id serial PRIMARY KEY,'
 
 cur.execute('COPY tweets',
             'FROM "../tweets_bd.csv"',
-            'DELIMITER ","',
+            'DELIMITER ";"',
             'CSV HEADER;')
 
 conn.commit()
