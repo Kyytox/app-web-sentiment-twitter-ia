@@ -15,24 +15,24 @@ conn = psycopg2.connect(
 cur = conn.cursor()
 
 # Execute a command: this creates a new table
-# cur.execute('DROP TABLE IF EXISTS tweets;')
-# cur.execute('CREATE TABLE tweets (id serial PRIMARY KEY,'
-#             'sentiment VARCHAR,'
-#             'score FLOAT(4),'
-#             'negative FLOAT(4),'
-#             'neutral FLOAT(4),'
-#             'positive FLOAT(4),'
-#             'id_user BIGINT,'
-#             'name_user VARCHAR,'
-#             'id_tweet BIGINT,'
-#             'text_tweet text,'
-#             'date_tweet TIMESTAMP,'
-#             'nb_interactions INT,'
-#             'retweet_count INT,'
-#             'reply_count INT,'
-#             'like_count INT,'
-#             'quote_count INT);'
-#             )
+cur.execute('DROP TABLE IF EXISTS tweets;')
+cur.execute('CREATE TABLE tweets (id serial PRIMARY KEY,'
+            'sentiment VARCHAR,'
+            'score FLOAT(4),'
+            'negative FLOAT(4),'
+            'neutral FLOAT(4),'
+            'positive FLOAT(4),'
+            'id_user BIGINT,'
+            'name_user VARCHAR,'
+            'id_tweet BIGINT,'
+            'text_tweet text,'
+            'date_tweet TIMESTAMP,'
+            'nb_interactions INT,'
+            'retweet_count INT,'
+            'reply_count INT,'
+            'like_count INT,'
+            'quote_count INT);'
+            )
 
 conn.commit()
 
