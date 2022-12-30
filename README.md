@@ -61,6 +61,7 @@ add infos of BD connection
 
 ```
 # BD infos connexion
+DB_NAME = 'tweets_sentiments'
 DB_USERNAME = 'user of BD'
 DB_PASSWORD = 'password BD'
 ```
