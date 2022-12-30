@@ -91,9 +91,6 @@ with init_bd.py :
 -   insert data tweets_bd.csv in table tweets
 
 ```
-cd backend/
-source env/Scripts/activate
-
 python init_bd.py
 ```
 
