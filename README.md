@@ -3,6 +3,7 @@
   <br>
   <img src="https://img.shields.io/static/v1?label=&message=IA&color=red"/>
   <img src="https://img.shields.io/static/v1?label=&message=NLP&color=yellow"/>
+  <img src="https://img.shields.io/static/v1?label=&message=Twitter-API-v2&color=blue"/>
   <img src="https://img.shields.io/static/v1?label=&message=Python&color=red"/>
   <img src="https://img.shields.io/static/v1?label=&message=JavaScript&color=yellowgreen"/>
   <img src="https://img.shields.io/static/v1?label=&message=React&color=blue"/>
