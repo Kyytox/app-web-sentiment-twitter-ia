@@ -43,7 +43,8 @@ conn.commit()
 cur.close()
 
 
-engine = create_engine(f"postgresql://{BD_USER}:{BD_PSW}@localhost:5432/test")
+engine = create_engine(
+    f"postgresql://{BD_USER}:{BD_PSW}@localhost:5432/tweets_sentiments")
 
 
 df = pd.read_csv('tweets_db.csv', low_memory=False)
