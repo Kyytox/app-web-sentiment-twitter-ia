@@ -12,6 +12,20 @@
   <br>
   <br>
 </div>
+
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/96888096/210034551-b60975e8-126a-4627-92ac-168552462b06.png" alt="home" />
+</p>
+<div align="center">
+  <li>Enter Text for sentiment detection</li>
+  <li>Entrer name user for collect tweets and analys there sentiments</li>
+  <li>Click on a user that already exists in the DB</li> 
+</div>
+
+
+  
+<br><br><br>
 <p align="center">
   <img src="https://github.com/Kyytox/app-web-sentiment-twitter-ia/blob/master/ressources/Twitter-Sentiments-app.gif" alt="animated" />
 </p>
