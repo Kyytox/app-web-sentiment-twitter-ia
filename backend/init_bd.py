@@ -1,6 +1,10 @@
 import os
 import psycopg2
-# from dotenv import load_dotenv
+from dotenv import load_dotenv
+from sqlalchemy import create_engine
+import pandas as pd
+
+load_dotenv()
 
 # collect infos connection for BD
 BD_USER = os.getenv('DB_USERNAME')
@@ -43,4 +47,19 @@ cur.execute('COPY tweets',
 conn.commit()
 
 cur.close()
+
+
+engine = create_engine(f"postgresql://{BD_USER}:{BD_PSW}@localhost:5432/test")
+
+
+df = pd.read_csv('tweets_db.csv', low_memory=False)
+
+try:
+    df.to_sql('tweets', engine, if_exists='append', index=False)
+except Exception:
+    print("Sorry, some error has occurred!")
+finally:
+    engine.dispose()
+
+
 conn.close()
