@@ -1,3 +1,18 @@
+<div id="header" align="center">
+  <h4>interface to analyze the sentiments of tweets from twitter users</h4>
+  <br>
+  <img src="https://img.shields.io/static/v1?label=&message=IA&color=red"/>
+  <img src="https://img.shields.io/static/v1?label=&message=NLP&color=yellow"/>
+  <img src="https://img.shields.io/static/v1?label=&message=Python&color=red"/>
+  <img src="https://img.shields.io/static/v1?label=&message=JavaScript&color=yellowgreen"/>
+  <img src="https://img.shields.io/static/v1?label=&message=React&color=blue"/>
+  <img src="https://img.shields.io/static/v1?label=&message=Flask&color=lightgrey"/>
+  <img src="https://img.shields.io/static/v1?label=&message=PostgreSQL&color=blue"/>
+  <br>
+  <br>
+</div>
+
+
 # Install APP
 
 clone repo Github
