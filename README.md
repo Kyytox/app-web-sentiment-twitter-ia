@@ -42,7 +42,7 @@ Put files DL in folder
 app-web-sentiment-twitter-ia/backend/cardiffnlp/twitter-xlm-roberta-base-sentiment
 ```
 
-<br><br>
+<br><br><br>
 
 <hr>
 
@@ -92,7 +92,7 @@ with init_bd.py :
 python init_bd.py
 ```
 
-<br><br>
+<br><br><br>
 
 <hr>
 
@@ -106,7 +106,7 @@ Add this line for connect Twitter API v2
 BEARER_TOKEN = 'BEARER_TOKEN of twitter API v2'
 ```
 
-<br><br>
+<br><br><br>
 
 <hr>
 
@@ -152,5 +152,5 @@ npm start
 ```
 
 
-<br><br><br>
+<br><br>
 Enjoy
