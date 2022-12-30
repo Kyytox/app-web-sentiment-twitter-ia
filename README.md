@@ -12,12 +12,9 @@
   <br>
   <br>
 </div>
-
-<div id="gif" align="center">
-![gif](https://github.com/Kyytox/app-web-sentiment-twitter-ia/blob/master/ressources/Twitter-Sentiments-app.gif)
-</div>
-
-
+<p align="center">
+  <img src="https://github.com/Kyytox/app-web-sentiment-twitter-ia/blob/master/ressources/Twitter-Sentiments-app.gif" alt="animated" />
+</p>
 
 # Install APP
 
