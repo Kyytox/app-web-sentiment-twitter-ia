@@ -7,12 +7,13 @@ import pandas as pd
 load_dotenv()
 
 # collect infos connection for BD
+BD_NAME = os.getenv('DB_NAME')
 BD_USER = os.getenv('DB_USERNAME')
 BD_PSW = os.getenv('DB_PASSWORD')
 
 # open connection with BD
 conn = psycopg2.connect(
-    f"dbname=tweets_sentiments user={BD_USER} password={BD_PSW}")
+    f"dbname={BD_NAME} user={BD_USER} password={BD_PSW}")
 
 
 # Open a cursor to perform database operations
@@ -44,7 +45,7 @@ cur.close()
 
 
 engine = create_engine(
-    f"postgresql://{BD_USER}:{BD_PSW}@localhost:5432/tweets_sentiments")
+    f"postgresql://{BD_USER}:{BD_PSW}@localhost:5432/{BD_NAME}")
 
 
 df = pd.read_csv('tweets_db.csv', low_memory=False)
