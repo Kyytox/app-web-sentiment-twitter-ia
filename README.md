@@ -73,6 +73,7 @@ with init_bd.py :
 ```
 cd backend/
 
+source env/Scripts/activate
 python init_bd.py
 ```
 
@@ -94,6 +95,18 @@ source venv\Scripts\activate
 export FLASK_APP=app.py
 export FLASK_ENV=development
 flask run
+```
+
+#### Desactivate download of fr_core_news_sm
+
+when backend is launch got to frequents_words.py in folder backend/
+
+comment lines 11 - 12
+to avoid downloads at each launch
+
+```
+spacy.cli.download("fr_core_news_sm")
+nltk.download('stopwords')
 ```
 
 ## Launch Fronted
