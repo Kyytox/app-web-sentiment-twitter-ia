@@ -18,6 +18,7 @@ git clone https://github.com/Kyytox/app-web-sentiment-twitter-ia.git
 cd app-web-sentiment-twitter-ia
 cd backend/
 source env/Scripts/activate
+
 pip3 install torch torchvision torchaudio
 ```
 
@@ -53,6 +54,7 @@ create file .env in folder backend/
 
 ```
 cd backend/
+
 touch .env
 ```
 
@@ -90,8 +92,8 @@ with init_bd.py :
 
 ```
 cd backend/
-
 source env/Scripts/activate
+
 python init_bd.py
 ```
 
@@ -120,6 +122,7 @@ BEARER_TOKEN = 'BEARER_TOKEN of twitter API v2'
 ```
 cd backend
 source venv\Scripts\activate
+
 export FLASK_APP=app.py
 export FLASK_ENV=development
 flask run
