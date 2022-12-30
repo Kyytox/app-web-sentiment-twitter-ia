@@ -16,6 +16,19 @@
   <img src="https://github.com/Kyytox/app-web-sentiment-twitter-ia/blob/master/ressources/Twitter-Sentiments-app.gif" alt="animated" />
 </p>
 
+<div align="center">
+  <li>Breakdown of tweets by sentiment</li>
+  <li>Number of tweets by sentiment</li>
+  <li>Number of tweets per sentiment by month</li>
+  <li>distribution of the different interactions by sentiments</li>
+  <li>WordCloud of frequents words</li>
+  <li>Exemple of Negative, Neutral , Positive tweets</li> 
+</div>
+
+<br><br>
+
+<hr>
+
 # Install APP
 
 clone repo Github
