@@ -26,6 +26,7 @@ config = AutoConfig.from_pretrained(MODEL)
 
 app = Flask(__name__)
 BEARER_TOKEN = os.getenv('BEARER_TOKEN')
+BD_USER = os.getenv('DB_USERNAME')
 BD_PSW = os.getenv('DB_PASSWORD')
 
 # Initialization Tweepy for use Twitter APi v2
@@ -92,7 +93,7 @@ def get_tweets_user(idUser, name):
     # Open conncetion with BD
     conn = get_db_connection()
     engine = create_engine(
-        f"postgresql://postgres:{BD_PSW}@localhost:5432/tweets_sentiments")
+        f"postgresql://{BD_USER}:{BD_PSW}@localhost:5432/tweets_sentiments")
 
     cur = conn.cursor()
 
