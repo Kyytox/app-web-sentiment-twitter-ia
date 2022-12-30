@@ -53,8 +53,6 @@ app-web-sentiment-twitter-ia/backend/cardiffnlp/twitter-xlm-roberta-base-sentime
 create file .env in folder backend/
 
 ```
-cd backend/
-
 touch .env
 ```
 
