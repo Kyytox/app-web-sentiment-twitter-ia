@@ -21,7 +21,7 @@ cur = conn.cursor()
 
 # Execute a command: this creates a new table
 cur.execute('DROP TABLE IF EXISTS tweets;')
-cur.execute('CREATE TABLE tweets (id serial PRIMARY KEY,'
+cur.execute('CREATE TABLE tweets ('
             'sentiment VARCHAR,'
             'score FLOAT(4),'
             'negative FLOAT(4),'
