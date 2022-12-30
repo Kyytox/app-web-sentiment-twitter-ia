@@ -239,7 +239,6 @@ def get_user_id(name):
 @app.route('/userInBD', methods=['GET'])
 def userInBD():
     # Open conncetion with BD
-    print('test')
     conn = get_db_connection()
     cur = conn.cursor()
     cur.execute(
