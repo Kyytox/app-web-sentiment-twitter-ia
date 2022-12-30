@@ -6,6 +6,12 @@ clone repo Github
 git clone https://github.com/Kyytox/app-web-sentiment-twitter-ia.git
 ```
 
+<br><br>
+
+<hr>
+
+# Model IA
+
 ### install Torch
 
 ```
@@ -19,21 +25,29 @@ pip3 install torch torchvision torchaudio
 
 There Files are too large for github, so go download there
 
-go on this page
+go on this page ==> Download pytorch_model.bin
+<br>
 https://huggingface.co/cardiffnlp/twitter-xlm-roberta-base-sentiment/blob/main/pytorch_model.bin
+<br><br>
 
-Download pytorch_model.bin and put it in folder
-app-web-sentiment-twitter-ia/backend/cardiffnlp/twitter-xlm-roberta-base-sentiment
-
-go on this page
+go on this page ==> Download tf_model.h5
+<br>
 https://huggingface.co/xlm-roberta-base/blob/main/tf_model.h5
+<br>
 
-Download tf_model.h5 and put it in folder
+Put files DL in folder
+
+```
 app-web-sentiment-twitter-ia/backend/cardiffnlp/twitter-xlm-roberta-base-sentiment
+```
 
-## BD postgreSQL
+<br><br>
 
-### create .env for connect to BD
+<hr>
+
+# BD postgreSQL
+
+## create .env for connect to BD
 
 create file .env in folder backend/
 
@@ -42,7 +56,8 @@ cd backend/
 touch .env
 ```
 
-add in this file there infos
+<br>
+add infos of BD connection
 
 ```
 # BD infos connexion
@@ -50,12 +65,12 @@ DB_USERNAME = 'user of BD'
 DB_PASSWORD = 'password BD'
 ```
 
-### Create BD with PostgreSQL
+<br>
+
+## Create BD with PostgreSQL
 
 install PostgreSQL
 https://www.postgresqltutorial.com/postgresql-getting-started/install-postgresql/
-
-open SQL Shell (psql)
 
 ```
 open SQL Shell (psql)
@@ -63,7 +78,9 @@ open SQL Shell (psql)
 CREATE DATABASE tweets_sentiments;
 ```
 
-### Create table tweets && Insert data
+<br>
+
+## Create table tweets && Insert data
 
 with init_bd.py :
 
@@ -77,9 +94,13 @@ source env/Scripts/activate
 python init_bd.py
 ```
 
-## Twitter API v2
+<br><br>
 
-open file .env in folder backend/
+<hr>
+
+# Twitter API v2
+
+open file .env in folder backend/ <br>
 Add this line for connect Twitter API v2
 
 ```
@@ -87,7 +108,13 @@ Add this line for connect Twitter API v2
 BEARER_TOKEN = 'BEARER_TOKEN of twitter API v2'
 ```
 
-## Launch Backend
+<br><br>
+
+<hr>
+
+# Launch APP
+
+## Backend
 
 ```
 cd backend
@@ -100,8 +127,9 @@ flask run
 #### Desactivate download of fr_core_news_sm
 
 when backend is launch got to frequents_words.py in folder backend/
-
+<br>
 comment lines 11 - 12
+<br>
 to avoid downloads at each launch
 
 ```
@@ -109,7 +137,7 @@ spacy.cli.download("fr_core_news_sm")
 nltk.download('stopwords')
 ```
 
-## Launch Fronted
+## Fronted
 
 install packages
 
