@@ -14,7 +14,7 @@
 </div>
 
 <div id="gif" align="center">
-![](https://github.com/Kyytox/app-web-sentiment-twitter-ia/blob/master/ressources/Twitter-Sentiments-app.gif)
+![gif](https://github.com/Kyytox/app-web-sentiment-twitter-ia/blob/master/ressources/Twitter-Sentiments-app.gif)
 </div>
 
 
