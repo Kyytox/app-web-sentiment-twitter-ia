@@ -1,5 +1,5 @@
 <div id="header" align="center">
-  <h4>interface to analyze the sentiments of tweets from twitter users</h4>
+  <h3>web interface to analyze the sentiment of tweets from twitter users</h3>
   <br>
   <img src="https://img.shields.io/static/v1?label=&message=IA&color=red"/>
   <img src="https://img.shields.io/static/v1?label=&message=NLP&color=yellow"/>
